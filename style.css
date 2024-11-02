@@ -1,0 +1,138 @@
+/* Variáveis de Cores */
+:root {
+  --cor-primaria: #ffffff; /* Azul */
+  --cor-secundaria: #2ecc71; /* Verde */
+  --cor-fundo: #010236; /* Cinza claro */
+  --cor-texto: #daff09; /* Texto padrão */
+}
+
+/* Estilo geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: var(--cor-primaria);
+  padding: 20px 0;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Lista de navegação */
+.ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.ul a {
+  color: rgb(7, 7, 7);
+  text-decoration: none;
+}
+
+/* Estilo do texto principal */
+.main-text {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.main-text h1 {
+  font-size: 2.5em;
+  color: var(--cor-primaria);
+}
+
+.main-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Botão */
+.btm-gradiente {
+  background: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria));
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btm-gradiente:hover {
+  background: var(--cor-secundaria);
+}
+
+/* Imagens */
+.main-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Modelos de Imagens */
+.modelos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.modelos img {
+  width: 30%;
+  margin: 10px 0;
+}
+
+/* Direitos autorais */
+.direitos {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Estilo do WhatsApp */
+.whats {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whats img {
+  width: 80px;
+  height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .modelos img {
+      width: 80%; /* Reduz a largura das imagens em telas menores */
+  }
+  
+  .btm-gradiente {
+      width: 100%; /* Botão ocupa toda a largura em telas pequenas */
+  }
+}
